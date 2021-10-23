@@ -1,2 +1,47 @@
 /* Journey to the Center of the Earth Practicum */
 /* Bryon Beaufait*/
+
+
+body {
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 20px 20px 50px 10px grey inset;
+    border-top-right-radius: 20px 20px;
+    border-top-left-radius: 20px 20px;
+}
+
+nav {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 10px 10px 20px 5px grey inset;
+}
+
+main {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 10px 10px 20px 5px grey inset;
+}
+
+main img {
+    max-width: 100%;
+}
+
+aside {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 10px 10px 20px 5px grey inset;
+}
+
+footer {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 10px 10px 20px 5px grey inset;
+    border-bottom-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
