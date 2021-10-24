@@ -181,22 +181,21 @@ aside h2 {
 }
 
 .submission {
-    display: grid;;
-}
-
-.submission {
-    display: flex;
-    flex-flow: column;
-    border: 1px black solid;
     padding: 5px;
-    margin: 20px;
-    align-content: flex-end;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.25);
+    border: 1px black solid;
 }
 
 .signature {
     text-align: right;
     font-style: italic;
+}
+
+.submission:nth-child(4){
+    margin-bottom: 30px;
 }
 
 /* footer */
@@ -206,14 +205,3 @@ footer {
     padding-bottom: 20px;
 }
 
-/* iPad size */
-
-@media screen and (min-width: 768px) {
-
-    header h1{
-        font-size: 35pt;
-    }
-
-    .submission {
-
-    }
