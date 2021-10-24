@@ -1,0 +1,242 @@
+/* Journey to the Center of the Earth Practicum */
+/* Bryon Beaufait*/
+
+/* initial design of columns */
+
+body {
+    text-align: center;
+    background-image: linear-gradient(#765729, black);
+    font-family: georgia;
+}
+
+header {
+    text-align: center;
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 20px 20px 50px 10px grey inset;
+    border-top-right-radius: 20px 20px;
+    border-top-left-radius: 20px 20px;
+    background-image: url(../img/cave.jpg);
+    background-size:cover;
+    padding-bottom: 20px;
+}
+
+nav {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px 5px grey inset;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+main {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px 5px grey inset;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+aside {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px 5px grey inset;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+footer {
+    border: 3px solid #886644;
+    margin-top: 5px;
+    box-shadow: 5px 5px 10px 5px grey inset;
+    border-bottom-right-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* language */
+
+:lang(fr) {
+    font-style: italic;
+}
+
+:lang(is) {
+    font-style: italic;
+}
+
+:lang(it) {
+    font-style: italic;
+}
+
+.character {
+    font-weight: bold;
+}
+
+h2 {
+    font-family: georgia;
+}
+
+/* borders */
+
+h2 {
+    border-bottom-style: dashed;
+    border-width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* links */
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a52a2a;
+}
+
+/* header */
+
+header {
+    box-shadow: 30px 20px 20px 5px black inset;
+    padding-top: 20px;
+}
+
+header h1 {
+    color: white;
+    font-family: Georgia;
+    text-shadow: 5px 5px 5px black;
+}
+
+/* nav */
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    border-right: double;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: medium;
+}
+
+li:nth-child(4) {
+    border: none;
+}
+
+nav {
+    padding-right: 35px;         
+}
+
+/* main */
+
+main h2 {
+    display: flex;
+    align-items:baseline;
+    padding-top: 20px;
+}
+
+main img {
+    display: flex;
+    max-width: 60%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 11.5pt;
+}
+
+img + p::first-line{
+    font-size: 15pt;
+}
+
+/* cryptogram image */
+
+#cryptogram img{
+    display: flex;
+    text-align: center;
+    max-width: 90%;
+    padding-left: 10px;
+    padding-bottom: 0;
+    
+}
+
+main figure {
+    text-align: center;
+    font-style: italic;
+    font-size: 11pt;
+}
+
+/* aside */
+
+aside h2 {
+    display: flex;
+    align-items: baseline;
+    font-size: 15pt;
+    padding-top: 20px;
+}
+
+.submission {
+    padding: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px black solid;
+}
+
+
+.signature {
+    text-align: right;
+    font-style: italic;
+}
+
+.submission:nth-child(4){
+    margin-bottom: 30px;
+}
+
+/* footer */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 35pt;
+    }
+
+    #cryptogram img {
+        max-width: 100%;
+    } 
+
+    .submission {
+        display: grid;
+        flex: 1;
+        
+    }
+
+    .signature {
+        align-self: center;
+                
+    }
+
+}
+
+@media screen and (min-width: 1024) {
+
+    body {
+        display: grid;
+        grid:
+        'header, header, header, header, header'
+        'nav, nav, nav, nav, nav'
+        'main, main, main, main, aside'
+        'footer, footer, footer, footer,footer';
+    }
+}
