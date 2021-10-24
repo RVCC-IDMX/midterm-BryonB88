@@ -189,6 +189,7 @@ aside h2 {
     border: 1px black solid;
 }
 
+
 .signature {
     text-align: right;
     font-style: italic;
@@ -217,6 +218,8 @@ footer {
 
     .submission {
         display: grid;
+        flex: 1;
+        
     }
 
     .signature {
@@ -224,4 +227,16 @@ footer {
                 
     }
 
+}
+
+@media screen and (min-width: 1024) {
+
+    body {
+        display: grid;
+        grid:
+        'header, header, header, header, header'
+        'nav, nav, nav, nav, nav'
+        'main, main, main, main, aside'
+        'footer, footer, footer, footer,footer';
+    }
 }
